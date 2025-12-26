@@ -6,13 +6,16 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, './src')
     }
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./styles/variables.scss";`
+        additionalData: `
+          @import "@/styles/variables.scss";
+          @import "@/styles/mixins.scss";
+        `
       }
     }
   }

@@ -1,0 +1,57 @@
+// =============================
+// 1. RESPONSIVE HELPERS
+// =============================
+
+// Använder dina breakpoints från variables.scss
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// =============================
+// 2. FLEX HELPERS
+// =============================
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// =============================
+// 3. TEXT HELPERS
+// =============================
+@mixin truncate($lines: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// =============================
+// 4. SHADOW & HOVER EFFECTS
+// =============================
+@mixin card-shadow {
+  box-shadow: $box-shadow-light;
+  transition: box-shadow $transition-medium;
+
+  &:hover {
+    box-shadow: $box-shadow-medium;
+  }
+}

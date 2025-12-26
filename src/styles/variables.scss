@@ -1,4 +1,86 @@
-$primary-color: #42b883;
-$secondary-color: #35495e;
-// fler variabler
+// =============================
+// 1. COLORS
+// =============================
 
+// Primära färger
+$color-primary: #81E4C4;
+$color-primary-light: #D5F6EB;
+$color-primary-dark: #81E4C4;
+
+// Sekundära färger
+$color-text-light: #ffffff;
+$color-text-dark: #242324;
+
+// Feedback / statusfärger
+$color-success: #4CAF50;
+$color-warning: #FFC107;
+$color-error: #E53935;
+
+// =============================
+// 2. TYPOGRAPHY
+// =============================
+
+$font-family-top: 'Monoton', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
+
+$font-size-xs: 0.75rem;  // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem;     // 16px
+$font-size-lg: 1.25rem;  // 20px
+$font-size-xl: 1.5rem;   // 24px
+$font-size-xxl: 2rem;    // 32px
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// =============================
+// 3. SPACING
+// =============================
+
+$spacing-xs: 0.25rem; // 4px
+$spacing-sm: 0.5rem;  // 8px
+$spacing-md: 1rem;    // 16px
+$spacing-lg: 2rem;    // 32px
+$spacing-xl: 4rem;    // 64px
+
+
+// =============================
+// 4. BREAKPOINTS
+// =============================
+
+$breakpoint-xs: 320px; // Small mobile
+$breakpoint-sm: 480px; // Big mobile
+$breakpoint-md: 768px; // Tablet
+$breakpoint-lg: 1024px; // Desktop
+$breakpoint-xl: 1280px; // Widescreen
+
+// =============================
+// 5. BORDERS / SHADOWS / RADII
+// =============================
+
+$border-radius-sm: 0.25rem; // 4px
+$border-radius-md: 0.5rem;  // 8px
+$border-radius-lg: 1rem;    // 16px
+$border-radius-round: 9999px;
+
+$box-shadow-light: 0 2px 6px rgba(0, 0, 0, 0.08);
+$box-shadow-medium: 0 4px 10px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+// =============================
+// 6. Z-INDEX
+// =============================
+
+$z-index-header: 100;
+$z-index-modal: 1000;
+$z-index-tooltip: 1100;
+$z-index-overlay: 1200;
+
+// =============================
+// 7. TRANSITIONS
+// =============================
+
+$transition-fast: 150ms ease-in-out;
+$transition-medium: 300ms ease-in-out;
+$transition-slow: 500ms ease-in-out;
