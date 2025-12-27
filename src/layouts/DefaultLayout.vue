@@ -44,7 +44,7 @@
 import { ref } from 'vue';
 import AppHeader from '@/components/AppHeader.vue';
 import AppNavigation from '@/components/AppNavigation.vue';
-import LoginForm from '@/views/Login.vue';
+import LoginForm from '@/views/LogIn.vue';
 import CreateAccountForm from '@/views/CreateAccount.vue';
 import CookieConsent from '@/components/CookieConsent.vue';
 

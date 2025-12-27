@@ -11,7 +11,7 @@ const routes = [
   { path: '/saved', name: 'saved', component: SavedLocation },
   { path: '/map', name: 'map', component: MapLocation },
   { path: '/tips', name: 'tips', component: TipsLocation },
-  { path: '/login', name: 'login', component: () => import('@/views/Login.vue')},
+  { path: '/login', name: 'login', component: () => import('@/views/LogIn.vue')},
   { path: '/create-account', name: 'CreateAccount', component: () => import('@/views/CreateAccount.vue')}
 ];
 
