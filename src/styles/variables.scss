@@ -3,9 +3,9 @@
 // =============================
 
 // Primära färger
-$color-primary: #81E4C4;
 $color-primary-light: #D5F6EB;
 $color-primary-dark: #81E4C4;
+$color-secondary-light: #ffffff;
 
 // Sekundära färger
 $color-text-light: #ffffff;
@@ -23,12 +23,13 @@ $color-error: #E53935;
 $font-family-top: 'Monoton', sans-serif;
 $font-family-base: 'Montserrat', sans-serif;
 
-$font-size-xs: 0.75rem;  // 12px
-$font-size-sm: 0.875rem; // 14px
-$font-size-md: 1rem;     // 16px
-$font-size-lg: 1.25rem;  // 20px
-$font-size-xl: 1.5rem;   // 24px
-$font-size-xxl: 2rem;    // 32px
+$font-size-xs: 0.75rem;     // 12px
+$font-size-sm: 0.875rem;    // 14px
+$font-size-md: 1rem;        // 16px
+$font-size-lg: 1.25rem;     // 20px
+$font-size-xl: 1.5rem;      // 24px
+$font-size-xxl: 2rem;       // 32px
+$font-size-xxxl: 2.625rem;  // 42px
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -43,7 +44,6 @@ $spacing-sm: 0.5rem;  // 8px
 $spacing-md: 1rem;    // 16px
 $spacing-lg: 2rem;    // 32px
 $spacing-xl: 4rem;    // 64px
-
 
 // =============================
 // 4. BREAKPOINTS

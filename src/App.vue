@@ -1,23 +1,12 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <header>
-    header
-  </header>
-
-  <main>
-    main
-  </main>
-
-  <footer>
-    <nav>
-      <RouterLink to="/">Home</RouterLink> |
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
-  </footer>
-  <RouterView />
+  <DefaultLayout>
+    <RouterView />
+  </DefaultLayout>
 </template>
 
-<style lang="scss">
+<script setup lang="ts">
+import DefaultLayout from '@/layouts/DefaultLayout.vue';
+</script>
+
+<style scoped lang="scss">
 </style>

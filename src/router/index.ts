@@ -1,17 +1,21 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import type { RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+import ExplorePage from '@/views/ExplorePage.vue';
+import AboutUs from '@/views/AboutUs.vue';
+import SavedLocation from '@/views/SavedLocation.vue';
+import MapLocation from '@/views/MapLocation.vue';
+import TipsLocation from '@/views/TipsLocation.vue';
 
-import HomePage from '../views/HomePage.vue'
-import AboutPage from '../views/AboutUs.vue'
+const routes = [
+  { path: '/', name: 'home', component: ExplorePage },
+  { path: '/about', name: 'about', component: AboutUs },
+  { path: '/saved', name: 'saved', component: SavedLocation },
+  { path: '/map', name: 'map', component: MapLocation },
+  { path: '/tips', name: 'tips', component: TipsLocation },
+  { path: '/login', name: 'login', component: () => import('@/views/Login.vue')},
+  { path: '/create-account', name: 'CreateAccount', component: () => import('@/views/CreateAccount.vue')}
+];
 
-const routes: RouteRecordRaw[] = [
-  { path: '/', name: 'Home', component: HomePage },
-  { path: '/about', name: 'About', component: AboutPage },
-]
-
-const router = createRouter({
+export default createRouter({
   history: createWebHistory(),
   routes,
-})
-
-export default router
+});
