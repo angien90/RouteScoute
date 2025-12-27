@@ -44,7 +44,6 @@
 
 <script setup lang="ts">
 import { reactive, computed } from 'vue'
-import axios from 'axios';
 
 interface Form {
   name: string
