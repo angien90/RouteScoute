@@ -12,6 +12,8 @@
         :key="index"
         :to="link.path"
         class="nav-button"
+        active-class="active"
+        exact-active-class="active"
       >
         <span class="material-symbols-outlined">{{ link.icon }}</span>
         <span class="nav-label">{{ link.label }}</span>
@@ -25,6 +27,8 @@
         :key="index"
         :to="link.path"
         class="dropdown-link"
+        active-class="active"
+        exact-active-class="active"
         @click="menuOpen = false"
       >
         {{ link.label }}
@@ -108,6 +112,20 @@ function toggleMenu() {
   }
 }
 
+.nav-button.active {
+  opacity: 0.2;             
+  pointer-events: none; 
+  cursor: default;
+}
+
+.nav-button.active .material-symbols-outlined {
+  transform: scale(1.2);
+}
+
+.nav-button.active .nav-label {
+  font-weight: $font-weight-bold;
+}
+
 /* ---------- DROPDOWN ---------- */
 .dropdown {
   position: fixed;
@@ -131,8 +149,15 @@ function toggleMenu() {
   text-transform: uppercase;
 
   &:hover {
-    background: #f2f2f2;
+    background: $color-primary-light;
   }
+}
+
+.dropdown-link.active {
+  opacity: 0.2;             
+  pointer-events: none; 
+  cursor: default;
+  font-weight: $font-weight-bold;
 }
 
 /* ---------- TABLET + DESKTOP ---------- */
